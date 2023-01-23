@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
+import time
 import chromedriver_autoinstaller
 from pyvirtualdisplay import Display
 display = Display(visible=0, size=(800, 800))  
@@ -38,3 +39,5 @@ driver = webdriver.Chrome(options = chrome_options)
 driver.get('https://mytoolstown.com/smsbomber/')
 driver.find_element(by= "id" ,value="mobno").send_keys("8872213990")
 driver.find_element(by="id", value="count").send_keys("1" + Keys.RETURN)
+time.sleep(2)
+
