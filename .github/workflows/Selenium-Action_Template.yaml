@@ -1,7 +1,7 @@
 name: Run Selenium On GitHub Action
 on:
   schedule:
-    - cron: '*/6 * * * *'
+    - cron: '*/7 * * * *'
 jobs:
   scrape:
     runs-on: ubuntu-latest
