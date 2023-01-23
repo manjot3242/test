@@ -36,6 +36,5 @@ for option in options:
 driver = webdriver.Chrome(options = chrome_options)
 
 driver.get('https://mytoolstown.com/smsbomber/')
-driver = get.drvier()
-driver.find.element(by= "id" ,value="mobno").send_keys("8872213990")
-driver.find.element(by="id", value="count").send_keys("1" + Keys.RETURN)
+driver.find_element(by= "id" ,value="mobno").send_keys("8872213990")
+driver.find_element(by="id", value="count").send_keys("1" + Keys.RETURN)
